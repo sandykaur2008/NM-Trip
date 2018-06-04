@@ -1,2 +1,6 @@
 venv/
 NMTrip.code-workspace
+.sass-cache/
+__pycache__/
+app/__pycache__/
+app/static/css/

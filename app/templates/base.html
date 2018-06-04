@@ -12,12 +12,16 @@
         <ul>
           {% if title != 'Home' %}
           <li><a href="{{ url_for('index') }}">Home</a></li>
+          {% endif %}
           {% if title != 'Home' and title != 'Carlsbad' %}
           <li><a href="{{ url_for('carlsbad') }}">Carlsbad</a></li>
+          {% endif %}
           {% if title != 'Home' and title != 'Food' %}
           <li><a href="{{ url_for('food') }}">Yummy Food</a></li>
+          {% endif %}
           {% if title != 'Home' and title != 'The Road' %}
           <li><a href="{{ url_for('road') }}">The Road</a></li>
+          {% endif %}
           {% if title != 'Home' and title != 'White Sands' %}
           <li><a href="{{ url_for('whitesands') }}">White Sands</a></li>
           {% endif %}
@@ -30,6 +34,7 @@
         <ul>
           {% if title != 'About' %}
           <li><a href="{{ url_for('about') }}">About Me</a></li>
+          {% endif %}
           {% if title != 'Contact' %}
           <li><a href="{{ url_for('contact') }}">Contact</a></li>
           {% endif %}
