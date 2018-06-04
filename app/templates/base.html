@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}|NM Trip</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <ul>
+          {% if title != 'Home' %}
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+          {% if title != 'Home' and title != 'Carlsbad' %}
+          <li><a href="{{ url_for('carlsbad') }}">Carlsbad</a></li>
+          {% if title != 'Home' and title != 'Food' %}
+          <li><a href="{{ url_for('food') }}">Yummy Food</a></li>
+          {% if title != 'Home' and title != 'The Road' %}
+          <li><a href="{{ url_for('road') }}">The Road</a></li>
+          {% if title != 'Home' and title != 'White Sands' %}
+          <li><a href="{{ url_for('whitesands') }}">White Sands</a></li>
+          {% endif %}
+        </ul>
+      </nav> 
+    </header>
+    {% block content %} {% endblock %}
+    <footer>
+      <div class="footer">
+        <ul>
+          {% if title != 'About' %}
+          <li><a href="{{ url_for('about') }}">About Me</a></li>
+          {% if title != 'Contact' %}
+          <li><a href="{{ url_for('contact') }}">Contact</a></li>
+          {% endif %}
+        </ul>
+      </div>    
+    </footer>
+  </body>
+</html>

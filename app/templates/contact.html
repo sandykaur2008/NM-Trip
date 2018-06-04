@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Contact Me</h1>
+          <p>Have questions or comments for me? Enter them below!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <form>
+            <label for="Questions/Comments"></label>
+            <textarea id="Questions/Comments" placeholder="Questions/Comments"></textarea>
+            <label for="email"></label>
+            <input type="email" id="email" placeholder="Email">
+            <label for="name"></label>
+            <input type="text" id="name" placeholder="Name">
+            <input type="submit" value="Click to Submit">
+          <form>
+        </div>
+      </div>
+    </div>
+  </main>
+{% endblock %}
