@@ -1,2 +1,53 @@
 // imports
 @import 'grid/simple-grid';
+
+header, footer {
+    background-color: #CCCCCC;
+}
+
+body {
+    background-color: #ccffff;
+}
+
+footer {
+    position: relative;
+    min-height: 6%;
+    padding-top: 1em;
+    li {
+        display: inline;
+        margin-left: 1em;
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+} 
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    height: 20%;
+    padding-top: 1em;
+}
+
+main {
+    min-height: 74%;
+    padding-bottom: 5%;
+}
+
+.col-12 {
+    text-align: center;
+    &.contact {
+        text-align: left;
+    }
+}

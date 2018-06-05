@@ -4,3 +4,4 @@ NMTrip.code-workspace
 __pycache__/
 app/__pycache__/
 app/static/css/
+.env

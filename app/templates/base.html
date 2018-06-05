@@ -10,24 +10,31 @@
     <header>
       <nav class="container">
         <ul>
-          {% if title != 'Home' %}
           <li><a href="{{ url_for('index') }}">Home</a></li>
-          {% endif %}
-          {% if title != 'Home' and title != 'Carlsbad' %}
+          {% if title != 'Carlsbad' %}
           <li><a href="{{ url_for('carlsbad') }}">Carlsbad</a></li>
           {% endif %}
-          {% if title != 'Home' and title != 'Food' %}
+          {% if title != 'Food' %}
           <li><a href="{{ url_for('food') }}">Yummy Food</a></li>
           {% endif %}
-          {% if title != 'Home' and title != 'The Road' %}
+          {% if title != 'The Road' %}
           <li><a href="{{ url_for('road') }}">The Road</a></li>
           {% endif %}
-          {% if title != 'Home' and title != 'White Sands' %}
+          {% if title != 'White Sands' %}
           <li><a href="{{ url_for('whitesands') }}">White Sands</a></li>
           {% endif %}
         </ul>
       </nav> 
     </header>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+      {% for message in messages %}
+      <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
     {% block content %} {% endblock %}
     <footer>
       <div class="footer">

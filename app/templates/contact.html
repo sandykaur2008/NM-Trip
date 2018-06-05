@@ -10,16 +10,32 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12">
-          <form>
-            <label for="Questions/Comments"></label>
-            <textarea id="Questions/Comments" placeholder="Questions/Comments"></textarea>
-            <label for="email"></label>
-            <input type="email" id="email" placeholder="Email">
-            <label for="name"></label>
-            <input type="text" id="name" placeholder="Name">
-            <input type="submit" value="Click to Submit">
-          <form>
+        <div class="col-12 contact">
+          <form action="" method="post">
+            {{ form.hidden_tag() }}
+            <p> 
+              {{ form.text(cols="40", rows="10") }}<br>
+              {{ form.text.label }}<br>
+              {% for error in form.text.errors %}
+              <span class="error">[{{ error }}]</span>
+              {% endfor %}
+            </p>
+            <p>
+              {{ form.email(size=32) }}<br>
+              {{ form.email.label }}<br>
+              {% for error in form.email.errors %}
+              <span class="error">[{{ error }}]</span>
+              {% endfor %}
+            </p>
+            <p>
+              {{ form.name(size=32) }}<br>
+              {{ form.name.label }}<br>
+              {% for error in form.name.errors %}
+              <span class="error">[{{ error }}]</span>
+              {% endfor %}
+            </p>
+            <p>{{ form.submit() }}</p>
+          </form>
         </div>
       </div>
     </div>
