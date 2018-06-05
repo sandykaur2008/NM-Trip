@@ -5,3 +5,4 @@ __pycache__/
 app/__pycache__/
 app/static/css/
 .env
+things-to-do.txt
