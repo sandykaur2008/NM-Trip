@@ -44,7 +44,7 @@ Make sure you're in root directory of repo and execute:
 # Built With
 - Visual Studio Code 1.23.1
 - Ruby Sass 3.5.6 
-- Flask 1.0.2 (see requirements.txt for extensions used). Learned a lot from 
+- Flask 1.0.2 (see requirements.txt for extensions used). 
 - Grunt 0.4.5 (see package.json)
 
 # Authors
