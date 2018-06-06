@@ -78,7 +78,7 @@ li.message-li {
     display: none;
 }
 
-@media screen and (max-width: 679px) {
+@media screen and (max-width: 987px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -86,7 +86,7 @@ li.message-li {
     }
   }
 
-  @media screen and (max-width: 679px) {
+  @media screen and (max-width: 987px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
       position: absolute;

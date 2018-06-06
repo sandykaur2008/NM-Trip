@@ -24,6 +24,12 @@
           {% if title != 'White Sands' %}
           <a href="{{ url_for('whitesands') }}">White Sands</a>
           {% endif %}
+          {% if title != 'About' %}
+          <a href="{{ url_for('about') }}">About Me</a>
+          {% endif %}
+          {% if title != 'Contact' %}
+          <a href="{{ url_for('contact') }}">Contact</a>
+          {% endif %}
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
@@ -40,18 +46,6 @@
     {% endif %}
     {% endwith %}
     {% block content %} {% endblock %}
-    <footer>
-      <div class="footer">
-        <ul>
-          {% if title != 'About' %}
-          <li><a href="{{ url_for('about') }}">About Me</a></li>
-          {% endif %}
-          {% if title != 'Contact' %}
-          <li><a href="{{ url_for('contact') }}">Contact</a></li>
-          {% endif %}
-        </ul>
-      </div>    
-    </footer>
     <script>
       function myFunction() {
         var x = document.getElementById("myTopnav");
