@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Carlsbad</h1>
+        </div>
+      </div>
+      <article>
+        <div class="row">
+          <div class="col-12">
+            <figure>
+              <img class="vertical" srcset="{{ url_for('static', filename='images/girlscouts-1200.jpg') }} 1200w,
+              {{ url_for('static', filename='images/girlscouts-750.jpg') }} 750w,
+              {{ url_for('static', filename='images/girlscouts-600.jpg') }} 600w,
+              {{ url_for('static', filename='images/girlscouts-375.jpg') }} 375w"
+              sizes="(min-width: 750px) 600px, 375px"
+              src="{{ url_for('static', filename='images/girlscouts-375.jpg') }}" 
+              alt="Walking in a line with girl scouts"> 
+              <figcaption>Walking in the dark!</figcaption>
+            </figure>
+            <p>I got stuck with girl scouts here, but I ended up liking them. 
+              They were loud - but also adorable, I couldn't deny it. 
+              We walked in a line in the dark, with nothing but lanterns to guide us!</p>
+          </div>
+        </div>      
+      </article>
+      <article>
+        <div class="row">
+          <div class="col-12">
+            <figure>
+              <img srcset="{{ url_for('static', filename='images/gurus-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/gurus-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/gurus-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/gurus-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/gurus-500.jpg') }}"
+              alt="Formations in the caverns">
+              <figcaption>Some cool formations</figcaption>
+            </figure>
+            <p>Inside the caverns I found some cool formations that looked like 
+              three gurus or video game bosses (you choose).</p>
+          </div>
+        </div>
+      </article>
+      <article class="Caverns">
+        <div class="row">
+          <div class="col-12">
+            <figure>
+              <img srcset="{{ url_for('static', filename='images/caverns-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/caverns-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/caverns-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/caverns-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/caverns-500.jpg') }}"
+              alt="Caverns">
+            </figure>
+            <p>It was my first time in a cave, and I was thoroughly impressed.</p>
+          </div>
+        </div>
+      </article> 
+    </div>
+  </main>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>White Sands</h1>
+          <p>This place blew my mind! Check it out!</p>
+        </div>
+      </div>
+      <article>
+        <div class="row">
+          <div class="col-12">
+            <figure>
+              <img srcset="{{ url_for('static', filename='images/whitesands-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/whitesands-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/whitesands-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/whitesands-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/whitesands-500.jpg') }}"
+              alt="Dunes">
+              <figcaption>Those are foot prints.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="row">
+          <div class="col-12">
+            <figure>
+              <img class="vertical" srcset="{{ url_for('static', filename='images/drseuss-1200.jpg') }} 1200w,
+              {{ url_for('static', filename='images/drseuss-750.jpg') }} 750w,
+              {{ url_for('static', filename='images/drseuss-600.jpg') }} 600w,
+              {{ url_for('static', filename='images/drseuss-375.jpg') }} 375w"
+              sizes="(min-width: 750px) 600px, 375px"
+              src="{{ url_for('static', filename='images/drseuss-375.jpg') }}" 
+              alt="Dead Dr. Seuss Character">
+              <figcaption>This looks like a dead Dr. Suess character...</figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+{% endblock %}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}|NM Trip</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="topnav" id="myTopnav">
+          <a href="{{ url_for('index') }}">Home</a>
+          {% if title != 'Carlsbad' %}
+          <a href="{{ url_for('carlsbad') }}">Carlsbad</a>
+          {% endif %}
+          {% if title != 'Food' %}
+          <a href="{{ url_for('food') }}">Yummy Food</a>
+          {% endif %}
+          {% if title != 'The Road' %}
+          <a href="{{ url_for('road') }}">The Road</a>
+          {% endif %}
+          {% if title != 'White Sands' %}
+          <a href="{{ url_for('whitesands') }}">White Sands</a>
+          {% endif %}
+          {% if title != 'About' %}
+          <a href="{{ url_for('about') }}">About Me</a>
+          {% endif %}
+          {% if title != 'Contact' %}
+          <a href="{{ url_for('contact') }}">Contact</a>
+          {% endif %}
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav> 
+    </header>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+      {% for message in messages %}
+      <li class="message-li">{{ message }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    {% block content %} {% endblock %}
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
