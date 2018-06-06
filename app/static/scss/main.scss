@@ -16,16 +16,9 @@
     }
 }
 
-header, footer {
-    background-color: #CCCCCC;
-}
-
+/*body and main*/
 body {
     background-color: #ccffff;
-}
-
-ul {
-    list-style-type: none;
 }
 
 main {
@@ -33,24 +26,16 @@ main {
     padding-bottom: 5%;
 }
 
-.col-12 {
-    @include text-align;
-    &.contact {
-        @include text-align(left);
-    }
-    &.left {
-        @include text-align(left);
-    }
+/*header and footer*/
+header, footer {
+    background-color: #CCCCCC;
 }
 
-span.error {
-    color: red;
+ul {
+    list-style-type: none;
 }
 
-li.message-li {
-    color: blue; 
-}
-
+/*header*/ 
 .topnav {
     background-color: #CCCCCC;
     overflow: hidden;
@@ -105,3 +90,55 @@ li.message-li {
         }
     }
 }
+
+/*content*/
+.col-12 {
+    @include text-align;
+    &.contact {
+        @include text-align(left);
+    }
+    &.left {
+        @include text-align(left);
+    }
+}
+
+figure {
+    max-width: 50em;
+}
+
+figcaption {
+    padding-top: 0.3%;
+    font-style: italic; 
+}
+
+img {
+    max-width: 100%;
+    @include display();
+    margin-left: auto;
+    margin-right: auto;
+    @include respond-to(max-width, 749px) {
+        width: 500px;
+    }
+    @include respond-to(min-width, 750px) {
+        width: 800px;
+    }
+    &.vertical {
+        @include respond-to(max-width, 749px) {
+            width: 375px;
+        }
+        @include respond-to(min-width, 750px) {
+            width: 600px;
+        }
+    }
+}
+
+/*forms and messages*/
+span.error {
+    color: red;
+}
+
+li.message-li {
+    color: blue; 
+}
+
+

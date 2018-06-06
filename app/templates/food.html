@@ -13,7 +13,13 @@
         <div class="row">
           <div class="col-12">
             <figure>
-              <img src="../images/dennys.jpg" alt="Denny's lol">
+              <img srcset="{{ url_for('static', filename='images/dennys-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/dennys-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/dennys-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/dennys-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/dennys-500.jpg') }}"
+              alt="Denny's lol">
               <figcaption>Denny's!<figcaption>
             </figure>
             <p>The day I went to White Sands, I went to Denny's. 
@@ -25,7 +31,13 @@
         <div class="row">
           <div class="col-12">
             <figure>
-              <img src="../images/micasita.jpg" alt="Mi Casita">
+              <img srcset="{{ url_for('static', filename='images/micasita-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/micasita-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/micasita-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/micasita-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/micasita-500.jpg') }}"
+              alt="Mi Casita">
               <figcaption>Some Mexican food!<figcaption>
             </figure>
             <p>The day I went to Carlsbad, I had a delicious meal 
@@ -37,7 +49,13 @@
         <div class="row">
           <div class="col-12">
             <figure> 
-              <img src="../images/turkey.jpg" alt="Turkey Burger">
+              <img srcset="{{ url_for('static', filename='images/turkey-1600.jpg') }} 1600w,
+              {{ url_for('static', filename='images/turkey-1000.jpg') }} 1000w,
+              {{ url_for('static', filename='images/turkey-800.jpg') }} 800w,
+              {{ url_for('static', filename='images/turkey-500.jpg') }} 500w"
+              sizes="(min-width: 750px) 800px, 500px"
+              src="{{ url_for('static', filename='images/turkey-500.jpg') }}"
+              alt="Turkey Burger">
               <figcaption>*Drool*</figcaption>
             </figure> 
             <p>My last day, in Albuquerque, I had a turkey burger!</p>
