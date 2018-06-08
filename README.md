@@ -54,6 +54,6 @@ Satinder Kaur
 Images are mine
 
 # Acknowledgments
-Thanks, @github/markalexandercastillo, for reviewing and giving me tips! :relaxed: 
+Thanks, @markalexandercastillo, for reviewing and giving me tips! :relaxed: 
 
 Also, relied heavily on https://blog.miguelgrinberg.com/
