@@ -1,4 +1,4 @@
-# Project Title
+# NM Trip
 This project is called "NM Trip" and the aim is to practice using what I've learned so far in my journey to become a developer - HTML (including responsive images with the help of Grunt), CSS (using Sass), and Python (using Flask). 
 
 # Getting Started
