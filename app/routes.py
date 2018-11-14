@@ -18,8 +18,8 @@ def about():
 def contact():
     form = ContactForm()
     if form.validate_on_submit():
-        send_email('NM Trip - Feedback', sender=app.config['MAIL_USERNAME'],
-        recipients=['sandykaur2008@gmail.com'], text_body="""
+        send_email('NM Trip - Feedback', sender='{}'.format(form.email.data),
+        recipient='sandykaur2008@gmail.com', text_body="""
         From: {} <{}>
         {}
         """.format(form.name.data, form.email.data, form.text.data))
