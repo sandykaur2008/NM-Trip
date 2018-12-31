@@ -12,4 +12,3 @@ node_modules/
 gruntfile.js
 package-lock.json
 package.json
-app/static/scss
