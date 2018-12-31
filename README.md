@@ -1,5 +1,5 @@
 # NM Trip
-This project is called "NM Trip" and the aim is to practice using what I've learned so far in my journey to become a developer - HTML (including responsive images with the help of Grunt), CSS (using Sass and Simple Grid), and Python (using Flask). It is deloyed with Heroku at https://sandys-nm-trip.herokuapp.com/. 
+This project is called "NM Trip" and the aim is to practice using what I've learned so far in my journey to become a developer - HTML (including responsive images with the help of GraphicsMagick and Grunt), CSS (using Sass and Simple Grid), and Python (using Flask). It is deloyed with Heroku at https://sandys-nm-trip.herokuapp.com/. 
 
 # Getting Started
 This isn't meant to be a project for collaboration - more like a way for me to log my frustrations as I go through the process. 
