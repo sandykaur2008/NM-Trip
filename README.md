@@ -13,7 +13,7 @@ To simply view:
 - Follow these instructions: https://help.github.com/articles/cloning-a-repository/
 
 # Prerequisites
-Aside from a working browser, you will also need:
+Aside from a working browser and Python 3, you will also need:
 
 - the dependencies in requirements.txt 
 
