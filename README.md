@@ -1,5 +1,5 @@
 # NM Trip
-This project is called "NM Trip" and the aim is to practice using what I've learned so far in my journey to become a developer - HTML (including responsive images with the help of Grunt), CSS (using Sass), and Python (using Flask). It is deloyed with Heroku at https://sandys-nm-trip.herokuapp.com/. 
+This project is called "NM Trip" and the aim is to practice using what I've learned so far in my journey to become a developer - HTML (including responsive images with the help of Grunt), CSS (using Sass and Simple Grid), and Python (using Flask). It is deloyed with Heroku at https://sandys-nm-trip.herokuapp.com/. 
 
 # Getting Started
 This isn't meant to be a project for collaboration - more like a way for me to log my frustrations as I go through the process. 
@@ -38,7 +38,7 @@ Make sure you're in root directory of repo and execute:
 - Visual Studio Code 1.23.1
 - Ruby Sass 3.5.6 
 - Flask 1.0.2 (see requirements.txt for extensions used). 
-- Grunt 0.4.5 (see package.json)
+- Grunt 0.4.5 
 
 # Authors
 Satinder Kaur 
