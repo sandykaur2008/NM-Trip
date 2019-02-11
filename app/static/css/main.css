@@ -180,7 +180,7 @@ p {
     display: block; } }
 /*body and main*/
 body {
-  background-color: #ccffff; }
+  background-color: #d9ede9; }
 
 main {
   min-height: 94%;
@@ -251,6 +251,7 @@ figcaption {
   font-style: italic; }
 
 img {
+  border-radius: 12px;
   max-width: 100%;
   display: block;
   margin-left: auto;
