@@ -3,24 +3,29 @@ from app import app
 from app.forms import ContactForm
 from app.email import send_email
 
-@app.route('/', methods=['GET', 'POST'])
-@app.route('/index', methods=['GET', 'POST'])
+@app.route('/')
+@app.route('/index')
 def index():
-  form = ContactForm()
-  if form.validate_on_submit():
-    send_email('NM Trip - Feedback', sender='{}'.format(form.email.data),
-    recipient='sandykaur2008@gmail.com', text_body="""
-    From: {} <{}>
-    {}
-    """.format(form.name.data, form.email.data, form.text.data))
-    flash('Thank you for your input, {}!'.format(form.name.data))
-    return redirect(url_for('index'))
-  return render_template('index.html', title='Home', form=form)
+  return render_template('index.html', title='Home')
 
 
 @app.route('/carlsbad')
 def carlsbad():
     return render_template('carlsbad.html', title='Carlsbad')
+
+
+@app.route('/contact', methods=['GET', 'POST'])
+def contact():
+    form = ContactForm()
+    if form.validate_on_submit():
+      send_email('NM Trip - Feedback', sender='{}'.format(form.email.data),
+      recipient='sandykaur2008@gmail.com', text_body="""
+      From: {} <{}>
+      {}
+      """.format(form.name.data, form.email.data, form.text.data))
+      flash('Thank you for your input, {}!'.format(form.name.data))
+      return redirect(url_for('index'))
+    return render_template('contact.html', title='Contact', form=form)
 
 
 @app.route('/food')
