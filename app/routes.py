@@ -24,7 +24,7 @@ def contact():
       {}
       """.format(form.name.data, form.email.data, form.text.data))
       flash('Thank you for your input, {}!'.format(form.name.data))
-      return redirect(url_for('index'))
+      return redirect(url_for('contact'))
     return render_template('contact.html', title='Contact', form=form)
 
 
