@@ -7,5 +7,6 @@ load_dotenv(os.path.join(basedir, '.env'))
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'you-will-never-guess'
     SENDGRID_API_KEY = os.environ.get('SENDGRID_API_KEY')
-    SENDGRID_USERNAME = os.environ.get('SENDGRID_USERNAME')
-    SENDGRID_PASSWORD = os.environ.get('SENDGRID_PASSWORD')
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+    FLASKS3_BUCKET_NAME = os.environ.get('FLASKS3_BUCKET_NAME')

@@ -1,14 +1,9 @@
 # NM Trip
-This project is called "NM Trip" and the aim is to practice using what I've learned so far in my journey to become a developer - HTML (including responsive images with the help of GraphicsMagick and Grunt), CSS (using Sass and Simple Grid), and Python (using Flask). It is deloyed with Heroku at https://sandys-nm-trip.herokuapp.com/. 
+This project is called "NM Trip" and the aim is to practice using what I've learned so far in my journey to become a developer - HTML (including responsive images with the help of GraphicsMagick and Grunt), CSS (using Sass and Simple Grid), and Python (using Flask). It is Dockerized and deployed with Amazon Fargate at https://spk.sandytravelsnewmexico.com. Static resources are served via Amazon S3 buckets. 
 
 # Getting Started
-This isn't meant to be a project for collaboration - more like a way for me to log my frustrations as I go through the process. 
 
-Nonetheless, to contribute:
-- Navigate to this repo: sandykaur2008/NM-Trip
-- Follow these instructions: https://help.github.com/articles/fork-a-repo/
-
-To simply view: 
+To grab code:
 - Navigate to this repo: sandykaur2008/NM-Trip
 - Follow these instructions: https://help.github.com/articles/cloning-a-repository/
 
@@ -47,6 +42,6 @@ Satinder Kaur
 Images are mine
 
 # Acknowledgments
-Thanks, @markalexandercastillo, for reviewing and giving me tips! :relaxed: 
+Thanks, @markalexandercastillo, for reviewing and giving me tips
 
-Also, relied heavily on https://blog.miguelgrinberg.com/
+Also, relied heavily on https://blog.miguelgrinberg.com/. 

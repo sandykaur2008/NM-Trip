@@ -4,7 +4,7 @@ from app.forms import ContactForm
 from app.email import send_email
 
 @app.route('/')
-@app.route('/index')
+# @app.route('/index')
 def index():
   return render_template('index.html', title='Home')
 
